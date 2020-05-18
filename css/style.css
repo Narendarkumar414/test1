@@ -1,0 +1,189 @@
+body
+{
+	margin: 0;
+	background-color: red;
+}
+.header
+{
+	line-height: 50px;
+	background: black;
+	color:white;
+	text-align: right;
+}
+.header a:focus
+{
+	border-color: red;
+	outline:0;
+}
+.header a
+{	
+	margin: 10px;
+	border-bottom: 5px solid black;
+	color:white;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: verdana;
+}
+.main
+{
+	display: flex;
+}
+.main .left
+{
+		width: 15%;
+}
+.main .left a
+{
+	display: block;
+	text-decoration: none;
+	color:white;
+	background: black;
+	margin: 10px;
+	padding: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: verdana;
+}
+.main .right
+{
+	width: 85%;
+}
+.main .right .item img
+{
+	width: 100px;
+	height: 100px;
+}
+.main .right .item
+{
+	display: inline-block;
+	width: 120px;
+	padding: 10px;
+	border-top: 5px solid black;
+	box-shadow:0 10px 10px black;
+	margin: 10px;
+	text-align: center;
+}
+.main .right .item .cart
+{
+	display: block;
+	padding:5px;
+	text-decoration: none;
+	background: black;
+	color:white;
+}
+
+.footer
+{
+	line-height: 150px;
+	background: black;
+	color:white;
+	text-align: center;
+}
+.main .right .item 
+{
+	font-family: verdana;
+	font-weight: bold;
+}
+.main .right .item .new
+{
+	color:green;
+}
+.main .right .item .old
+{
+	color:Red;
+}
+.main .right .item .desc
+{
+	color:silver;
+}
+.main .right .item .title
+{
+	color:grey;
+}
+.main .right .item .discount:after
+{
+	content:"% off";
+}
+.main .right .item .old:before,
+.main .right .item .new:before
+{
+	content:"$";
+}
+
+form.fixed button
+{
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 20px;
+	border:0;
+}
+form.fixed input
+{
+	float: right;
+}
+form.fixed
+{
+	position: fixed;
+	top:10%;
+	right: 10%;
+	color:white;
+	border-top: 50px solid black;
+	box-shadow:0 10px 10px black;
+	padding: 30px;
+	opacity: 0;
+	transform: translateX(500px);
+	transition: 0.3s;
+}
+
+form.fixed#login {background: teal; }
+form.fixed#signup {background:tomato; }
+form.fixed a
+{
+	position: absolute;
+	bottom:0;
+	right: 0;
+	padding: 10px;
+	background: black;
+	color:white;
+	text-decoration: none;
+	font-weight: bold;
+}
+:target
+{
+	opacity: 1 !important;
+	transform: translateX(0px) !important;
+}
+
+table.fixed
+{
+	transition: 2s;
+	position: fixed;
+	top:10%;
+	right: 10%;
+	background: white;
+	border:5px solid black;
+	box-shadow:0 10px 10px black;
+	padding: 20px;
+	opacity: 0;
+	transform: translateX(600px);
+}
+input.small
+{
+	width: 30px;
+}
+.checkout
+{
+	background: black;
+	color:white;
+	padding: 10px;
+	margin: 10px;
+	text-decoration: none;
+	font-family: verdana;
+	font-weight: bold;
+}
+table th
+{
+	background: silver;
+	color:White;
+}
